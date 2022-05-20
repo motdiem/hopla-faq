@@ -19,7 +19,7 @@ body {
 
 @media only screen {
     body {
-        margin: 2em auto;
+        margin: 6em auto 2em;
         max-width: 900px;
         color: rgb(55, 53, 47);
     }
@@ -27,7 +27,6 @@ body {
 
 body {
     line-height: 1.5;
-    white-space: pre-wrap;
 }
 
 a,
@@ -40,6 +39,35 @@ a.visited {
     font-size: 80%;
     color: #444;
 }
+
+div#banner{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 6em;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+div#banner .logo a{
+    display: flex;
+    align-items: center;
+}
+div#banner .logo a span{
+    margin-left: 5%;
+}
+div#banner .logo img{
+    width: 20%;
+}
+div#banner .logo.main img{
+    width: 40%;
+}
+div#banner .external{
+    display: flex;
+    align-items: center;
+}
+
 
 h1,
 h2,
@@ -209,10 +237,6 @@ ul {
 li>ol:first-child,
 li>ul:first-child {
     margin-block-start: 0.6em;
-}
-
-ul>li {
-    list-style: disc;
 }
 
 ul.to-do-list {
